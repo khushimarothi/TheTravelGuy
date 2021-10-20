@@ -1,0 +1,280 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    height: 88vh;
+    background-image:  url("../images/head1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/*.custom-shape-divider-bottom-1634701516 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1634701516 svg {
+    position: relative;
+    display: block;
+    width: calc(101% + 1.3px);
+    height: 161px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1634701516 .shape-fill {
+    fill: blue;
+}*/
+/*------------------book now--------------------*/
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-size:2rem ;
+    font-weight: 600;
+    background-color: #92b6ec;
+    color: navy;
+    padding: .1rem .7rem;
+    border-radius: .5rem;
+}
+.heading span.space{
+    background: none;
+}
+.booki{
+    padding: 10px 20px;
+}
+/*------------------*/
+.size{
+    font-size: 30px;
+}
+/*-------------packages-------------*/
+.package .card{
+   outline: none;
+   border-radius: 0.5rem;
+  
+}
+/*.package .card img{ transition: .5s all ease-in;}
+.package .card:hover img{
+    transform: translate(10px);
+}*/
+.fill{
+    color: #468ffd;
+}
+
+.btn-color{
+    background-color: navy;
+    color: #fff;
+    border: 2px solid navy;
+}
+.btn-color:hover{
+ background-color: #92b6ec;
+ color: navy;
+}
+.btn-color1{
+    background-color: #fff;
+    color: navy;
+    border: 2px solid navy;
+}
+.btn-color1:hover{
+    background-color:#92b6ec;
+    color:navy;
+    
+}
+
+/*--------services-----------*/
+
+
+.services .card{
+    overflow: hidden;
+    position:relative;
+    height: 14rem!important;
+    border: none;
+}
+ .services .card .card-img{
+    background: rgb(0, 0, 0);
+    opacity: 0.5;
+    position: absolute;
+    transition: .5s ease;
+ }
+ .services .card .card-img-overlay{
+     position: relative;
+     justify-content: center;
+     align-self: center;
+     left: 0;
+     top:0;
+     width: 100%;
+     text-align: center;
+ }
+/*.services .card-img-overlay{
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: .5s ease;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+}*/
+
+/*-------gallery--------*/
+
+/*------review-----------*/
+.review .review-slider{
+    padding-bottom: 2rem;
+}
+.review .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    
+}
+.review .box img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+
+    object-fit: cover;
+   margin-bottom: 1rem;
+}
+
+/*----------footer------------*/
+
+footer {
+    background-color: #333;
+    color: black;
+}
+
+.tag{
+    font-weight: bold;
+}
+.underline1{
+    border-bottom: 2px solid #30306e;
+    width: 70px;
+}
+.anc{
+    color: black;
+    text-decoration: none;
+}
+
+.so1{
+  text-decoration: none;
+  color: #fff;
+}
+.so1:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.so2{
+    background-color: #3b5998;
+    border-radius: 50%;
+   width: 32px;
+}
+
+.so3{
+    background-color:#55acee;
+    border-radius: 50%;
+}
+
+.so4{
+    background-color: #dd4b39;
+    border-radius: 50%;
+    width: 32px;
+}
+
+.so5{
+    background-color: #ac2bac;
+    border-radius: 50%;
+    width: 32px;
+}
+.so6{
+    background-color: #0082ca;
+    border-radius: 50%;
+    width: 32px;
+}
+
+.let{
+    width: 75%;
+    border-top-right-radius: 0;  
+    border-bottom-right-radius: 0;
+}
+.in{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.sie{
+    background-color: #222;
+    color: #fff;
+}
+
+#btnScrollToTop{
+    display: none;
+    z-index: 99;
+    background-color: #3b5998;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: #fff;
+    position: fixed;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 95px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+#btnScrollToTop:active{
+    background: #92b6ec;
+}
+
+/*---------------------*/
+
+@media(max-width:500px){
+    .carousel-item .img-fluid{
+        height: 60vh;
+        width: 100%;   
+    }
+    .carousel-item img{
+        opacity: .7;
+    }
+    .carousel-item .carousel-caption-one{
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 6rem;
+    color: rgb(155, 141, 141);
+    color: #7798cb;
+    text-align: center;
+    font-size: 14px;
+   
+    }
+
+    .heading span{
+        font-size: 1rem;
+    }
+
+    .review .box{
+        width: 18rem;
+        margin: auto;
+    }
+    .review .box img{
+        width:8rem;
+        height:8rem;
+    }
+}
+
+/*--------------------*/
