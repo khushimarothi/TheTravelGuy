@@ -18,6 +18,67 @@
 />
 </head>
 <body>
+
+  <div class="color-switcher ">
+    <div class="switcher-btn shadow py-3  ps-3 d-flex ">
+      <i class="fas fa-cog " ></i>
+    </div>
+    <div class="shadow"><h3 class="theme-customiser py-4 px-4">
+      THEME CUSTOMISER 
+    </h3>
+</div>
+
+<div class="header-text px-4 pt-3"><p>Try a pre-built swatch!</p></div>
+
+    <div class="theme-buttons-container my-1 px-4 ">
+
+   <button class="theme-button btn shadow w-100 mb-2 " data-color="#6900c7" data-color-primary="#0061f2" data-color-success="#005f3b" data-color-warning="#f4a100" style="background-color: #0061f2; background-image: linear-gradient(45deg,#0061f2,#6900c7);"><span class="text1">Default </span></button>
+  
+
+    <button class="theme-button btn  shadow w-100 mb-2" data-color="#8039da" data-color-primary="#1da1f5" data-color-success="#12ac70" data-color-warning="#ffc147" style="background-color: #1da1f5; background-image: linear-gradient(45deg,#1da1f5,#8039da);"><span  class="text1" >Flat</span></button>
+
+
+    <button class="theme-button btn  w-100 mb-2" data-color="#ff793f" data-color-primary="#f53b57" data-color-success="#05c46b" data-color-warning="#ffa801"style="background-color: #f53b57; background-image: linear-gradient(45deg,#f53b57,#ff793f);"><span  class="text1">Sunset </span></button>
+
+
+    <button class="theme-button btn w-100 mb-2" data-color="#506c6a" data-color-primary="#6eabc2" data-color-success="#799f78" data-color-warning="#d5c357" style="background-color: #6eabc2; background-image: linear-gradient(45deg,#6eabc2,#506c6a);"> Subtle </button>
+
+
+    <button class="theme-button btn  w-100 mb-2" data-color="#0fa28b" data-color-primary="#06794f" data-color-success="#3ac97c" data-color-warning="#ebb20c"style="background-color: #06794f; background-image: linear-gradient(45deg,#06794f,#0fa28b);"><span>Seafoam </span></button>
+    </div>
+
+    <div class="header-text px-4 pt-3"><p>Or choose your own colors...</p></div>
+
+<div  style="text-align: center;" class="d-flex align-items-center first px-4 mb-2">
+<input type="color" id="color"  value="#6400b5"  style="border:none;" > 
+<button class="btn prim w-100 ms-1 " id="hex">Primary</button>
+</button>
+</div>
+
+   
+<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
+<input type="color" id="seco" name="chng" value="#0061f2" style="border:none;" > 
+<button class="btn seco w-100 ms-1 " id="swatch">Secondary</button>
+</button>
+</div>
+     
+<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
+<input type="color" id="succ" value="#005f3b" style="border:none;" > 
+<button class="btn succ w-100 ms-1 " id="swatch2">Success</button>
+</button>
+</div>
+       
+<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
+<input type="color" id="warn" value="#f4a100" style="border:none;" > 
+<button class="btn warn w-100 ms-1 " id="swatch3">Warning</button>
+</button>
+</div>
+  
+
+
+</div>
+
+
     <!----------navbar------------>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 ">
         <div class="container px-3 ">
@@ -52,19 +113,7 @@
       </nav>
       <!------------------------------------>
      
-       <section class="head">
-         
-         <div class="container py-5 justify-content-center align-items-center">
-  <div class="row text-center mx-auto">
-    <div class="col-md-12">
-      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi repellendus sunt itaque ipsam cumque, incidunt aliquam nulla architecto pariatur deserunt.</p>
-      <button class="btn btn-primary">Explore</button>
-    </div>
-  </div>
-         </div>
-       </section>
-  
+      
 <!------------------------book now----------------------------->
 <section class="py-5">
 <div class="container ">
@@ -78,10 +127,10 @@
    <span>O</span>
    <span>W</span>
  </div>
- <div class="container mt-3">
+ <div class=" mt-3">
    <div class="row mx-auto">
      <div class="col-md-6 text-center my-auto">
-       <img src="images/book.jpg" alt="" width="80%" height="50%">
+       <img src="images/book1.png" alt="" width="80%" height="50%">
      </div>
      <div class="col-md-6 my-auto">
        <h3>Explore New Places , Adventure Awaits.</h3>
@@ -94,16 +143,10 @@
    </div>
  </div>
 </div>
-<!--<div class="custom-shape-divider-bottom-1634701516">
-  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-  </svg>
-</div>-->
+
 </section>
 <!------------------Packages---------------------->
-<section class="package">
+<section class="container package">
   <div class="heading py-4">
     <span>P</span>
     <span>A</span>
@@ -114,7 +157,7 @@
     <span>E</span>
     <span>S</span>
   </div>
-  <div class="container py-4">
+  <div class=" py-4">
     <div class="row mx-auto g-3">
       <div class="col-md-4">
         <div class="card shadow h-100">
@@ -155,6 +198,7 @@
       <div class="col-md-4">
         <div class="card shadow h-100">
           <img src="images/sydney.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="bg-danger special rounded-pill"><p class="m-1">10% off</p></div>
           <div class="card-body p-4">
             <h5 class="card-title"><i class="fa fa-map-marker-alt fill" ></i> Sydney</h5></h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in  a little bit longer.</p>
@@ -180,7 +224,7 @@
 </section>
 
 <!-----------------------services-------------------------------->
-<section class="py-4 services">
+<section class="py-4 container services">
   <div class="heading my-4">
     <span>S</span>
     <span>E</span>
@@ -191,37 +235,11 @@
     <span>E</span>
     <span>S</span>
   </div>
-<div class="container py-4">
+<div class=" py-4">
   <div class="row g-4 mx-auto">
-    <!--<div class="col-md-4 text-center">
-      <div class="card shadow">
-        <div class="card-body mt-3 p-4">
-      <i class="fas fa-hotel size"></i>
-      <h4 class="mt-1">blAffordae Hotels</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus eligendi nisi explicabo ipsa odit quae, natus magnam dolore illum ratione eos veniam sed officia in! Quod atque nulla officia.</p>
-    </div>
-    </div></div>
-
-    <div class="col-md-4 text-center">
-      <div class="card shadow ">
-        <div class="card-body  mt-3 p-4">
-      <i class="fas fa-utensils size"></i>
-      <h4 class="mt-1">Food & Drinks</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus eligendi nisi explicabo ipsa odit quae, natus magnam dolore illum ratione eos veniam sed officia in! Quod atque nulla officia.</p>
-    </div>
-    </div></div>
-
-    <div class="col-md-4 text-center">
-      <div class="card shadow ">
-        <div class="card-body  mt-3 p-4">
-      <i class="fas fa-bullhorn size"></i>
-      <h4 class="mt-1">Safety Guide</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus eligendi nisi explicabo ipsa odit quae, natus magnam dolore illum ratione eos veniam sed officia in! Quod atque nulla officia.</p>
-    </div>
-    </div></div>-->
-  
+    
   <div class="col-md-4 text-center">
-  <div class="card h-100 bg-dark text-white">
+  <div class="card h-100 bg-dark shadow text-white">
     <img src="images/hotel.jpg" class="card-img " alt="..." height="100%">
     <div class="card-img-overlay  text-center mt-2">
       <div class="card-body py-3">
@@ -232,9 +250,8 @@
     </div>
   </div></div>
 
-  
  <div class="col-md-4">
-  <div class="card h-100 bg-dark text-white">
+  <div class="card h-100 bg-dark shadow text-white">
     <img src="images/food.jpg" class="card-img" alt="..."  height="100%">
     <div class="card-img-overlay  text-center my-2">
       <div class="card-body py-3">
@@ -245,10 +262,9 @@
     </div>
   </div></div>
 
-
  <div class="col-md-4">
-    <div class="card h-100 bg-dark text-white">
-      <img src="images/food.jpg" class="card-img" alt="..."  height="100%">
+    <div class="card h-100 bg-dark shadow text-white">
+      <img src="images/safety.jpg" class="card-img" alt="..."  height="100%">
       <div class="card-img-overlay  text-center mt-2">
         <div class="card-body py-3">
           <i class="fas fa-bullhorn size  mt-1"></i>
@@ -258,100 +274,249 @@
       </div>
     </div></div>
 
-   
-
-
-
-  
-
   </div>
- <!-- <div class="row g-4 pt-4 mx-auto">
-    <div class="col-md-4 text-center">
-      <div class="card shadow">
-        <div class="card-body">
-      <i class="fas fa-globe-asia size"></i>
-      <h4 class="mt-1">Around The World</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus eligendi nisi explicabo ipsa odit quae, natus magnam dolore illum ratione eos veniam sed officia in! Quod atque nulla officia.</p>
-    </div>
-    </div></div>
+ <div class="row g-4 pt-4 mx-auto">
+     <div class="col-md-4 text-center">
+      <div class="card h-100 shadow bg-dark text-white">
+        <img src="images/around.jpg" class="card-img " alt="..." height="100%">
+      
+        <div class="card-img-overlay  text-center mt-2">
+          <div class="card-body py-3">
+            <i class="fas fa-globe-asia size mt-1"></i>
+            <h4 class="mt-3">Around The World</h4>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div></div>
+    
+      
+     <div class="col-md-4">
+      <div class="card h-100 shadow bg-dark text-white">
+        <img src="images/travel.jpg" class="card-img" alt="..."  height="100%">
+        <div class="card-img-overlay  text-center my-2">
+          <div class="card-body py-3">
+            <i class="fas fa-plane size  mt-1"></i>
+            <h4 class="mt-3">Fastest Travel</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+         </div>
+        </div>
+      </div></div>
+    
+    
+     <div class="col-md-4">
+        <div class="card h-100 shadow bg-dark text-white">
+          <img src="images/adventure.jpg" class="card-img" alt="..."  height="100%">
+          <div class="card-img-overlay  text-center mt-2">
+            <div class="card-body py-3">
+              <i class="fas fa-hiking size mt-1"></i>
+              <h4 class="mt-3">Adventures</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div></div>
+    
 
-    <div class="col-md-4 text-center">
-      <div class="card shadow">
-        <div class="card-body">
-      <i class="fas fa-plane size"></i>
-      <h4 class="mt-1">Fastest Travel</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus eligendi nisi explicabo ipsa odit quae, natus magnam dolore illum ratione eos veniam sed officia in! Quod atque nulla officia.</p>
-    </div>
-    </div>
-  </div>
-    <div class="col-md-4 text-center">
-      <div class="card shadow">
-        <div class="card-body">
-      <i class="fas fa-hiking size"></i>
-      <h4 class="mt-1">Adventures</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus eligendi nisi explicabo ipsa odit quae, natus magnam dolore illum ratione eos veniam sed officia in! Quod atque nulla officia.</p>
-    </div>
-    </div></div>
-  -->
+
   </div>
 </div>
 </section>
 <!-----------------gallery-------------------->
-<section class="gallery py-4">
-  <div class="heading py-2 ">
-    <span>G</span>
-    <span>A</span>
-    <span>L</span>
-    <span>L</span>
+<section class="gallery container py-4">
+  <div class="heading1 py-2 ">
+    <span>D</span>
     <span>E</span>
-    <span>R</span>
-    <span>Y</span>
+    <span>S</span>
+    <span>T</span>
+    <span>I</span>
+    <span>N</span>
+    <span>A</span>
+    <span>T</span>
+    <span>I</span>
+    <span>O</span>
+    <span>N</span>
     </div>
-  <div class="container pt-5">
-    <div class="row gy-2 mx-auto">
-     <div class="col-md-4 col-10 col-xxl-4 mx-auto">
-       <figure>
-         <img src="images/pack1.jpg" alt="" class="img-fluid">
-       </figure>
-     </div>
+    <div class="pt-5">
+     <!-- <div class="row one g-3 mx-auto">
+        <div class="col-md-12">
+          <div class="card h-100 shadow bg-dark text-white">
+            <img src="images/mauritius.jpg" class="card-img" alt="..."  height="100%">
+            <div class="card-img-overlay mt-2">
+              <div class="card-body py-3">
+                <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
+                <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row two g-3 pt-3 mx-auto">
+          <div class="col-md-6">
+            <div class="card h-100 shadow bg-dark text-white">
+              <img src="images/Singapore.jpg" class="card-img" alt="..."  height="100%">
+              <div class="card-img-overlay mt-2">
+                <div class="card-body py-3">
+                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
+                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow bg-dark text-white">
+              <img src="images/paris.jpg" class="card-img" alt="..."  height="100%">
+              <div class="card-img-overlay mt-2">
+                <div class="card-body py-3">
+                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
+                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row three g-3 py-3 mx-auto">
+          <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+              <img src="images/london.jpg" class="card-img" alt="..."  height="100%">
+              <div class="card-img-overlay mt-2">
+                <div class="card-body py-3">
+                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
+                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+              <img src="images/pack1.jpg" class="card-img" alt="..."  height="100%">
+              <div class="card-img-overlay mt-2">
+                <div class="card-body py-3">
+                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
+                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+              <img src="images/Singapore.jpg" class="card-img" alt="..."  height="100%">
+              <div class="card-img-overlay mt-2">
+                <div class="card-body py-3">
+                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
+                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>-->
 
-    <div class="col-md-4 col-10 col-xxl-4 mx-auto">
-       <figure>
-         <img src="images/pack1.jpg" alt="" class="img-fluid">
-       </figure>
-     </div>
-    <div class="col-md-4 col-10 col-xxl-4 mx-auto">
-       <figure>
-         <img src="images/pack1.jpg" alt="" class="img-fluid">
-       </figure>
-     </div>
-  
-  </div>
-  <div class="row gy-2 mx-auto">
-    <div class="col-md-4 col-10 col-xxl-4 mx-auto">
-      <figure>
-        <img src="images/pack1.jpg" alt="" class="img-fluid">
-      </figure>
-    </div>
 
-   <div class="col-md-4 col-10 col-xxl-4 mx-auto">
-      <figure>
-        <img src="images/pack1.jpg" alt="" class="img-fluid">
-      </figure>
-    </div>
-   <div class="col-md-4 col-10 col-xxl-4 mx-auto">
-      <figure>
-        <img src="images/pack1.jpg" alt="" class="img-fluid">
-      </figure>
-    </div>
+        <div class="row g-1 py-2">
+          <div class="col-md-6">
+           <div class="card h-100 shadow bg-dark text-white">
+             <img src="images/mauritius.jpg" class="card-img" alt="..."  height="100%">
+             <div class="card-img-overlay mt-2">
+               <div class="card-body py-3">
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+                
+               </div>
+             </div>
+           </div>
+          </div>
+          <div class="col-md-6">
+           <div class="card h-100 shadow bg-dark text-white">
+             <img src="images/london.jpg" class="card-img" alt="..."  height="100%">
+             <div class="card-img-overlay mt-2">
+               <div class="card-body py-3">
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+                               </div>
+             </div>
+           </div>
+          </div>
+         </div>
  
- </div>
-  </div>
+      
+         <div class="row g-1 gy-2">
+           <div class=" col-md-6">
+           <div class="card h-100 shadow bg-dark text-white">
+             <img src="images/agra.jpg" class="card-img" alt="..."  height="100%">
+             <div class="card-img-overlay mt-2">
+               <div class="card-body py-3">
+                 <div class="first bg m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+               
+               </div>
+             </div>
+           </div>
+         </div>
+ 
+         <div class="col-md-3 center">
+           <div class="row pb-1">
+             <div class="col">
+             <div class="card h-100 shadow bg-dark text-white">
+               <img src="images/paris.jpg" class="card-img" alt="..."  height="100%">
+               <div class="card-img-overlay mt-2">
+                 <div class="card-body py-3">
+                   <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+                   
+                 </div>
+               </div></div>
+             </div>
+            </div>
+        <div class="row gy-2">
+          <div class="col">
+         <div class="card h-100 shadow bg-dark text-white">
+           <img src="images/pack1.jpg" class="card-img" alt="..."  height="100%">
+           <div class="card-img-overlay mt-2">
+             <div class="card-body py-3">
+               <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+            </div>
+           </div></div>
+         </div>
+        </div>
+            
+         </div>
+         <div class="col-md-3">
+           <div class="card h-100 shadow bg-dark text-white">
+             <img src="images/Singapore.jpg" class="card-img" alt="..."  height="100%">
+             <div class="card-img-overlay mt-2">
+               <div class="card-body py-3">
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+               
+               </div>
+             </div>
+           </div>
+          </div>
+</div> 
+
+      </div>
    
-  <div class="text-center py-2">
-    <button type="button" class="btn btn-primary">Explore More  <i class="far fa-arrow-alt-circle-right 5x ms-2"></i></button>
-  </div>
+  
 </section>
+<!---------------------contact----------------------------
+<section class="contact container py-5">
+  <div class="heading my-4">
+    <span>C</span>
+    <span>O</span>
+    <span>N</span>
+    <span>T</span>
+    <span>A</span>
+    <span>C</span>
+    <span>T</span>
+  </div>
+
+  <div class="row g-3 pt-3">
+    <div class="col-md-6">
+      <h3>Lorem, ipsum dolor.</h3>
+     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius eveniet voluptatum id alias eligendi.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae dignissimos rem quod est pariatur!</p>
+    </div>
+    <div class="col-md-6">
+      
+    </div>
+  </div>
+
+
+</section>
+-->
 
 <!---------------------review-------------------------->
 <section class="review py-4" id="review">
@@ -519,7 +684,7 @@
     spaceBetween: 20,
     loop:true,
     autoplay: {
-      delay:2500,
+      delay:3500,
       disableOnInteraction:false,
     },
   breakpoints: {
