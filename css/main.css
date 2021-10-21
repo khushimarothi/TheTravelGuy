@@ -166,18 +166,70 @@ body{
 
 
 /*--------------------------------*/
-
-.head .image img{
-    height: 70vh;
-    width: 100%;
-    position: relative;
-    background: rgba(0,0,0,0.15);
-    background-size: cover;
-    
+.showcase img{
+    background: rgba(0,0,0,.25);
+    opacity: 0.3;
+    height: 88vh;
 }
 
-.head .container{
+.showcase .body {
+    content: '';
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.showcase .body span{
+    font-size: 3rem;
+    font-family: "Sacramento",cursive;
+    color: #31ff7a;
+    text-shadow: 0px 1px 2px #333;
+}
+.showcase .body h1{
+    font-size: 4rem;
+}
+.showcase form.search-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+   
+}
+.showcase form.search-box .input-form input{
+    height: 3rem;
+    width: 100%;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 9px 33px 9px 32px;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+}
+.showcase form.search-box .select-items .form-select{
+    
+    height: 3rem;
+    width: 100%;
+    border-radius: 0;
+    padding: 11px 100px 11px 34px;
+}
+.showcase form.search-box .select-form a{
+     height: 3rem;
+     text-decoration: none;
+     color: #fff;
+     display: block;
+     background-color: #468ffc;
+     text-align: center;
+     padding:  12px 35px;
+     border-top-right-radius: 50px;
+     border-bottom-right-radius: 50px;
 }
 /*------------------book now--------------------*/
 .heading , .heading1{
@@ -504,27 +556,12 @@ footer {
 /*---------------------*/
 
 @media(max-width:500px){
-    .carousel-item .img-fluid{
-        height: 60vh;
+.showcase img{
+        height: 70vh;
         width: 100%;   
     }
-    .carousel-item img{
-        opacity: .7;
-    }
-    .carousel-item .carousel-caption-one{
-    position: absolute;
-    right: 15%;
-    bottom: 1.25rem;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 6rem;
-    color: rgb(155, 141, 141);
-    color: #7798cb;
-    text-align: center;
-    font-size: 14px;
    
-    }
-
+   
     .heading span{
         font-size: 1rem;
     }
@@ -543,7 +580,28 @@ footer {
     }
     
 }
+@media(max-width:768px){
+    .showcase .body span{
+        font-size: 1.5rem;
+    }
+    .showcase .body h1{
+        font-size: 2rem;
+    }
+    .showcase form.search-box .input-form input{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+       
+    }
+    .showcase form.search-box .select-form .select-items .form-select{
+        padding: 11px 154px 11px 28px;
+    }
 
+    .showcase form.search-box .select-form a{
+        padding: 12px 111px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
 
 /*--------------------*/
 .book .card{
