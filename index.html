@@ -16,6 +16,8 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -28,56 +30,13 @@
     </h3>
 </div>
 
-<div class="header-text px-4 pt-3"><p>Try a pre-built swatch!</p></div>
+ <div class="theme-buttons-container my-1 py-3 px-4 ">
 
-    <div class="theme-buttons-container my-1 px-4 ">
-
-   <button class="theme-button btn shadow w-100 mb-2 " data-color="#6900c7" data-color-primary="#0061f2" data-color-success="#005f3b" data-color-warning="#f4a100" style="background-color: #0061f2; background-image: linear-gradient(45deg,#0061f2,#6900c7);"><span class="text1">Default </span></button>
-  
-
-    <button class="theme-button btn  shadow w-100 mb-2" data-color="#8039da" data-color-primary="#1da1f5" data-color-success="#12ac70" data-color-warning="#ffc147" style="background-color: #1da1f5; background-image: linear-gradient(45deg,#1da1f5,#8039da);"><span  class="text1" >Flat</span></button>
-
-
-    <button class="theme-button btn  w-100 mb-2" data-color="#ff793f" data-color-primary="#f53b57" data-color-success="#05c46b" data-color-warning="#ffa801"style="background-color: #f53b57; background-image: linear-gradient(45deg,#f53b57,#ff793f);"><span  class="text1">Sunset </span></button>
-
-
-    <button class="theme-button btn w-100 mb-2" data-color="#506c6a" data-color-primary="#6eabc2" data-color-success="#799f78" data-color-warning="#d5c357" style="background-color: #6eabc2; background-image: linear-gradient(45deg,#6eabc2,#506c6a);"> Subtle </button>
-
-
-    <button class="theme-button btn  w-100 mb-2" data-color="#0fa28b" data-color-primary="#06794f" data-color-success="#3ac97c" data-color-warning="#ebb20c"style="background-color: #06794f; background-image: linear-gradient(45deg,#06794f,#0fa28b);"><span>Seafoam </span></button>
+   <button class="theme-button btn shadow w-100 mb-2 " data-color="#222222"  data-color-light="#ffffff"  style="background-color: #0061f2; background-image: linear-gradient(45deg,#fff,#222222);"><span class="text1">Dark Theme</span></button>
+   <button class="theme-button btn  shadow w-100 mb-2" data-color="#ffffff" data-color-light="#222222"  style="background-color: #1da1f5; background-image: linear-gradient(45deg,#222,#fff);"><span  class="text2" >Light Theme</span></button>
     </div>
 
-    <div class="header-text px-4 pt-3"><p>Or choose your own colors...</p></div>
-
-<div  style="text-align: center;" class="d-flex align-items-center first px-4 mb-2">
-<input type="color" id="color"  value="#6400b5"  style="border:none;" > 
-<button class="btn prim w-100 ms-1 " id="hex">Primary</button>
-</button>
 </div>
-
-   
-<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
-<input type="color" id="seco" name="chng" value="#0061f2" style="border:none;" > 
-<button class="btn seco w-100 ms-1 " id="swatch">Secondary</button>
-</button>
-</div>
-     
-<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
-<input type="color" id="succ" value="#005f3b" style="border:none;" > 
-<button class="btn succ w-100 ms-1 " id="swatch2">Success</button>
-</button>
-</div>
-       
-<div  style="text-align: center;" class="d-flex align-items-center px-4 mb-2">
-<input type="color" id="warn" value="#f4a100" style="border:none;" > 
-<button class="btn warn w-100 ms-1 " id="swatch3">Warning</button>
-</button>
-</div>
-  
-
-
-</div>
-
 
     <!----------navbar------------>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 ">
@@ -92,21 +51,21 @@
                 <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
                <li class="nav-item ms-lg-3">
-                <a class="nav-link " aria-current="page" href="#">Packages</a>
+                <a class="nav-link " aria-current="page" href="#package">Packages</a>
               </li>
               <li class="nav-item ms-lg-3">
-                <a class="nav-link " aria-current="page" href="#">Services</a>
+                <a class="nav-link " aria-current="page" href="#service">Services</a>
               </li>
               <li class="nav-item ms-lg-3">
-                <a class="nav-link " aria-current="page" href="#">Gallery</a>
+                <a class="nav-link " aria-current="page" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item ms-lg-3">
-                <a class="nav-link " aria-current="page" href="#">Contact</a>
+                <a class="nav-link " aria-current="page" href="#contact">Contact</a>
               </li>
               
             </ul>
             <div class="ms-lg-3">
-              <button type="button" class="btn rounded-pill btn-primary "> Book Now <!-- <i class="far fa-arrow-alt-circle-right 5x ms-2"></i>--></button>
+              <button type="button" class="btn rounded-pill btn-primary "> <a href="#book"> Book Now </a> </button>
             </div>
           </div>
         </div>
@@ -114,19 +73,18 @@
       <!------------------------------------>
      
   <header >
- <div class="showcase">
-  <div class="bg-dark text-white">
-    <img src="images/h1_hero.jpg" class="card-img" alt="..."  height="100%">
-    <div class="container">
-      
-       
+ <div class="showcase " >
+ 
+    <!--<img src="images/h1_hero.jpg" class="card-img" alt="..."  height="100%">-->
+    <div class="container text-center py-5" data-aos="zoom-in">
+      <div class="row py-5 justify-content-center">
+       <div class="col-md-12">
       <div class="body p-3">
         <div class="lorem text-center"> <span>Explore The Thrill</span>
           <h1>Discover Great Places</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nobis.</p>
-          <form action="#" class="search-box ">
-            <div class="input-form my-2">
-              <input type="text">
+        <form action="#" class="search-box ">
+            <div class="input-form my-2" >
+              <input type="text" placeholder="Enter Your Destination">
             </div>
             <div class="select-form">
              <div class="select-items my-2">
@@ -142,7 +100,8 @@
             </div>
           </form>
         </div>
-       
+      </div>
+      
       
        
         </div>
@@ -151,8 +110,8 @@
   </header>
       
 <!------------------------book now----------------------------->
-<section class="py-5">
-<div class="container ">
+<section class="py-5"  data-aos="fade-up">
+<div class="container "  id="book">
  <div class="heading">
    <span>B</span>
    <span>O</span>
@@ -182,8 +141,8 @@
 
 </section>
 <!------------------Packages---------------------->
-<section class="container package">
-  <div class="heading py-4">
+<section class=" package"   data-aos="fade-up">
+  <div class="heading container py-4" id="package">
     <span>P</span>
     <span>A</span>
     <span>C</span>
@@ -193,7 +152,7 @@
     <span>E</span>
     <span>S</span>
   </div>
-  <div class=" py-4">
+  <div class="container mx-auto py-4">
     <div class="row mx-auto g-3">
       <div class="col-md-4">
         <div class="card shadow h-100">
@@ -254,14 +213,14 @@
   </div>
 
   <div class="text-center py-4">
-    <button type="button" class="btn btn-color1">Explore More  <i class="far fa-arrow-alt-circle-right 5x ms-2"></i></button>
+    <button type="button" class="btn booki rounded-pill btn-color">Explore More  <i class="far fa-arrow-alt-circle-right 5x ms-2"></i></button>
   </div>
   
 </section>
 
 <!-----------------------services-------------------------------->
-<section class="py-4 container services">
-  <div class="heading my-4">
+<section class="py-4 container services"  data-aos="fade-up">
+  <div class="heading my-4"  id="service">
     <span>S</span>
     <span>E</span>
     <span>R</span>
@@ -314,7 +273,7 @@
  <div class="row g-4 pt-4 mx-auto">
      <div class="col-md-4 text-center">
       <div class="card h-100 shadow bg-dark text-white">
-        <img src="images/around.jpg" class="card-img " alt="..." height="100%">
+        <img src="images/around.jpeg" class="card-img " alt="..." height="100%">
       
         <div class="card-img-overlay  text-center mt-2">
           <div class="card-body py-3">
@@ -356,9 +315,24 @@
   </div>
 </div>
 </section>
+<!--------------------------------------------------->
+<div class="newsletter py-5" data-aos="fade-up" >
+  <div class="container text-center">
+    <div class="row justify-content-center mx-5 ">
+      <div class="col-md-12">
+        <h4>Get Notified About Latest Offer On Packages</h4>
+       </div>
+    </div>
+    <div class="col-md-12 news align-items-center justify-content-center px-4 py-3">
+     <div class="newstext1 my-1"><input type="text" class="form-control" placeholder="Enter Email Address"></div>
+     <div  class="newstext2 my-1"><button class="btn btn-outline-secondary" type="button" id="button-addon2">Join</button></div>
+    </div>
+  </div>
+
+</div>
 <!-----------------gallery-------------------->
-<section class="gallery container py-4">
-  <div class="heading1 py-2 ">
+<section class="gallery container py-4"   data-aos="fade-up">
+  <div class="heading1 py-2 " id="gallery">
     <span>D</span>
     <span>E</span>
     <span>S</span>
@@ -371,88 +345,14 @@
     <span>O</span>
     <span>N</span>
     </div>
-    <div class="pt-5">
-     <!-- <div class="row one g-3 mx-auto">
-        <div class="col-md-12">
-          <div class="card h-100 shadow bg-dark text-white">
-            <img src="images/mauritius.jpg" class="card-img" alt="..."  height="100%">
-            <div class="card-img-overlay mt-2">
-              <div class="card-body py-3">
-                <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
-                <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="row two g-3 pt-3 mx-auto">
+    <div class="container mx-auto py-5">
+           <div class="row g-1 py-2">
           <div class="col-md-6">
-            <div class="card h-100 shadow bg-dark text-white">
-              <img src="images/Singapore.jpg" class="card-img" alt="..."  height="100%">
-              <div class="card-img-overlay mt-2">
-                <div class="card-body py-3">
-                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
-                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card h-100 shadow bg-dark text-white">
-              <img src="images/paris.jpg" class="card-img" alt="..."  height="100%">
-              <div class="card-img-overlay mt-2">
-                <div class="card-body py-3">
-                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
-                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row three g-3 py-3 mx-auto">
-          <div class="col-md-4">
-            <div class="card h-100 shadow bg-dark text-white">
-              <img src="images/london.jpg" class="card-img" alt="..."  height="100%">
-              <div class="card-img-overlay mt-2">
-                <div class="card-body py-3">
-                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
-                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 shadow bg-dark text-white">
-              <img src="images/pack1.jpg" class="card-img" alt="..."  height="100%">
-              <div class="card-img-overlay mt-2">
-                <div class="card-body py-3">
-                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
-                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 shadow bg-dark text-white">
-              <img src="images/Singapore.jpg" class="card-img" alt="..."  height="100%">
-              <div class="card-img-overlay mt-2">
-                <div class="card-body py-3">
-                  <div class="first m-3"><i class="fa fa-map-marker-alt size m-1"></i> lorem </div>
-                  <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro!</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>-->
-
-
-        <div class="row g-1 py-2">
-          <div class="col-md-6">
-           <div class="card h-100 shadow bg-dark text-white">
+           <div class="card h-100 shadow bg-dark text-white"  >
              <img src="images/mauritius.jpg" class="card-img" alt="..."  height="100%">
              <div class="card-img-overlay mt-2">
                <div class="card-body py-3">
-                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Mauritius </div>
                 
                </div>
              </div>
@@ -463,7 +363,7 @@
              <img src="images/london.jpg" class="card-img" alt="..."  height="100%">
              <div class="card-img-overlay mt-2">
                <div class="card-body py-3">
-                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> london </div>
                                </div>
              </div>
            </div>
@@ -477,7 +377,7 @@
              <img src="images/agra.jpg" class="card-img" alt="..."  height="100%">
              <div class="card-img-overlay mt-2">
                <div class="card-body py-3">
-                 <div class="first bg m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+                 <div class="first bg m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Agra </div>
                
                </div>
              </div>
@@ -491,7 +391,7 @@
                <img src="images/paris.jpg" class="card-img" alt="..."  height="100%">
                <div class="card-img-overlay mt-2">
                  <div class="card-body py-3">
-                   <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+                   <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Paris </div>
                    
                  </div>
                </div></div>
@@ -503,7 +403,7 @@
            <img src="images/pack1.jpg" class="card-img" alt="..."  height="100%">
            <div class="card-img-overlay mt-2">
              <div class="card-body py-3">
-               <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+               <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Egypt </div>
             </div>
            </div></div>
          </div>
@@ -515,48 +415,21 @@
              <img src="images/Singapore.jpg" class="card-img" alt="..."  height="100%">
              <div class="card-img-overlay mt-2">
                <div class="card-body py-3">
-                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> lorem </div>
+                 <div class="first m-3"><i class="fa fa-map-marker-alt size1 m-1"></i> Singapore </div>
                
                </div>
              </div>
            </div>
           </div>
 </div> 
-
-      </div>
-   
-  
-</section>
-<!---------------------contact----------------------------
-<section class="contact container py-5">
-  <div class="heading my-4">
-    <span>C</span>
-    <span>O</span>
-    <span>N</span>
-    <span>T</span>
-    <span>A</span>
-    <span>C</span>
-    <span>T</span>
-  </div>
-
-  <div class="row g-3 pt-3">
-    <div class="col-md-6">
-      <h3>Lorem, ipsum dolor.</h3>
-     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius eveniet voluptatum id alias eligendi.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae dignissimos rem quod est pariatur!</p>
-    </div>
-    <div class="col-md-6">
-      
-    </div>
-  </div>
-
+ </div>
 
 </section>
--->f
+
 
 <!---------------------review-------------------------->
-<section class="review py-4" id="review">
-  <div class="heading py-2 ">
+<section class="review " id="review">
+  <div class="heading py-4 ">
     <span>R</span>
     <span>E</span>
     <span>V</span>
@@ -565,7 +438,7 @@
     <span>W</span>
     </div>
 
-  <div class="container py-5">
+  <div class="container pt-5" data-aos="fade-up">
     <div class="swiper review-slider">
       <div class="swiper-wrapper wrapper">
         <div class="swiper-slide slider">
@@ -637,33 +510,81 @@
  </div>
 
 </section>
+
+<!---------------------contact---------------------------->
+<section class="contact container py-5"  data-aos="fade-up">
+  <div class="heading my-4"  id="contact">
+    <span>C</span>
+    <span>O</span>
+    <span>N</span>
+    <span>T</span>
+    <span>A</span>
+    <span>C</span>
+    <span>T</span>
+  </div>
+
+  <div class="row mx-2  g-2 pt-3">
+    <div class="col-md-6 mx-auto">
+      <h3>Why You Choose Us ?</h3>
+     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius eveniet voluptatum id alias eligendi.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae dignissimos rem quod est pariatur!</p>
+      <div><i class="far fa-envelope icon me-1">  </i><span>TheTravelGuys@gmail.com</span></div>
+      <br>
+      <div><i class="fas fa-phone-alt icon me-1"> </i><span> +91 9865021867</span></div>
+      <br>
+      <div><i class="fas fa-map-marker-alt icon me-1">  </i> <span>Airport Rd, Abbas Nagar, Gandhi Nagar, Bhopal, Madhya Pradesh</span></div>
+      <div class="my-2"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7328.30236033971!2d77.361919!3d23.310273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x296f51f7ef0498c7!2sRajiv%20Gandhi%20Proudyogiki%20Vishwavidyalaya!5e0!3m2!1sen!2sin!4v1625247941916!5m2!1sen!2sin" width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+    <div class="col-md-6 my-auto">
+      <form class="row mx-3 g-3">
+        <div class="col-md-6">
+           <input type="text" class="form-control" placeholder="First Name" >
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Last Name" >
+        </div>
+        <div class="col-12">
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="col-12"> 
+          <textarea rows="4"  class="form-control" placeholder="Query" class="area"></textarea>
+       </div>
+       <div>
+        <button type="button" class="btn btn-color">Submit</button>
+      </div>
+    </div>
+   
+  </div>
+
+</section>
+
 <!------------------------footer------------------------->
 
 <footer class="bg-light ">
   <div class="container py-4">
      
-   <div class="row mt-4 px-3">
+   <div class="row mt-4 px-4">
 
 
-     <div class="col-md-3 col-lg-4 mb-4 mx-auto">
+     <div class="col-md-3 col-lg-4 mb-4 mx-auto ">
        <figure><img src="images/main.png" alt="" height="40%" width="40%"></figure>
      
      </div>
-   
-     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+     <div class="col-md-1 col-lg-2 col-xl-2 mx-auto mb-4 log">
+   </div>
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
            <h5>Useful Links</h5>
            <div class="underline1 mb-4"></div>
               
-           <p><a href="#" class="anc">Home</a></p>
-           <p><a href="#" class="anc">Products</a></p>
-           <p><a href="#" class="anc">Cart</a></p>
-           <p><a href="#" class="anc">About Us</a></p>
-           <p><a href="#" class="anc">Contact Us</a></p>
+           <p><a href="#" class="anc">Book</a></p>
+           <p><a href="#" class="anc">Packages</a></p>
+           <p><a href="#" class="anc">Gallery</a></p>
+            <p><a href="#" class="anc">Contact Us</a></p>
 
      </div>
 
      
-     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
        <h5>Information</h5>
        <div class="underline1 mb-4"></div>
           
@@ -673,7 +594,8 @@
        <p><a href="#" class="anc">Return</a></p>
        <p><a href="#" class="anc">Policies</a></p>
 
- </div>
+ </div>-->
+
 
      <div class="col-md-3  mx-auto mb-4">
        <h5>Subscribe </h5>
@@ -715,6 +637,10 @@
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 <script>
   var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
@@ -760,10 +686,16 @@
       behavior:"smooth"
     });
    }
-
-
-
 </script>
+<script>
+  document.querySelector('.switcher-btn').onclick=() =>{
+      document.querySelector('.color-switcher').classList.toggle('active');
+  };
+  </script>
+
+<script src="js/index.js"></script>
+
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
