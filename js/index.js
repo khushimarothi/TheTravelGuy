@@ -1,8 +1,3 @@
-var loader = document.getElementById("preloader");
-window.addEventListener(
-  "load", function () {
-  loader.style.display = "none";
-});
 
 const colors=document.getElementsByClassName('theme-button');
 
@@ -35,11 +30,11 @@ btn1.addEventListener('click', () => {
 
 btn2.addEventListener('click', () => {
   var div = document.getElementById("change");
-  div.style.backgroundImage =" url('../images/demobg2.jpg')";
+  div.style.backgroundImage =" url('../images/demobg.jpg')";
   var news = document.getElementById("news");
-  news.style.backgroundImage =" url('../images/demobg2.jpg')";
+  news.style.backgroundImage =" url('../images/demobg.jpg')";
   var review = document.getElementById("review");
-  review.style.backgroundImage =" url('../images/demobg2.jpg')";
+  review.style.backgroundImage =" url('../images/demobg.jpg')";
 });
 
 //validation--------------------------------------------->
