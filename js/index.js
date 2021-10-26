@@ -29,7 +29,7 @@ btn1.addEventListener('click', () => {
 });
 
 btn2.addEventListener('click', () => {
-  document.getElementById("change").style.backgroundImage="url('../images/demobg.jpg')";
+  document.getElementById("change").style.backgroundImage="url('../images/demobg.jpeg')";
  /* if(div == "url(../images/trial.jpg)"){
     div.style.backgroundImage="url(../images/demobg.jpg)";
   }
