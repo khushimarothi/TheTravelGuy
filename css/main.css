@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Changa:wght@500&family=Irish+Grover&family=Lobster&family=Luckiest+Guy&family=Montserrat:wght@600&family=Orbitron:wght@500;600&family=Pacifico&family=Permanent+Marker&family=Prompt:wght@500&family=Righteous&display=swap');
+
 *{
     margin: 0;padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
+
 .loader{
    /*background:#3199da url("../images/eb707ae7096cc8df384f1bf87dab547a.gif") no-repeat center center;
     height: 100vh;
@@ -21,7 +25,7 @@
     margin: 0;
 }
 .disappear{
-    animation: vanish 5s forwards;
+    animation: vanish 2s forwards;
 }
 @keyframes vanish{
     100%{
@@ -130,7 +134,9 @@ html{
     border: none;
     
 }
-
+.navbar{
+    font-family: 'Special Elite', cursive;
+}
 /*--------------------------------*/
 .showcase {
     height: 86vh;
@@ -145,7 +151,7 @@ html{
     align-items: center;*/
     text-align: center;
     padding-top: 4.3rem!important; 
-  
+    font-family: 'Righteous', cursive;
 }
 
 
@@ -218,6 +224,9 @@ html{
 .booki{
     padding: 10px 20px;
 }
+ #book p{
+    font-family: 'Hind Guntur', sans-serif;
+ }
 /*------------------*/
 .size{
     font-size: 30px;
@@ -264,7 +273,15 @@ html{
 .btn-color1:hover{
     background-color:#92b6ec;
     color:navy;
-    
+}
+.btn-color2{
+    background-color:navy;
+    color: #fff;
+    border: 2px solid navy;
+}
+.btn-color2:hover{
+    background-color:#92b6ec;
+   
 }
 .package .card .special{
     width: 5rem;
@@ -280,6 +297,9 @@ html{
 }
 .package .card .special p{
     margin: auto 4px;
+}
+.package p{
+    font-family: 'Palanquin Dark', sans-serif;
 }
 /*--------services-----------*/
 
@@ -375,21 +395,22 @@ html{
 }
 .newstext1 input{
  border: none;
- border-top-right-radius: 0;
- border-bottom-right-radius: 0;
- width: 200px;
+ border-top-right-radius: 0!important;
+ border-bottom-right-radius: 0!important;
+ width: 220px;
  height: 3rem;
- 
+ border-radius: 30px;
+ padding-left: 20px;
 }
 .newstext2 .btn{
     height: 3rem!important;
     width: 100px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
     color: #30306e; 
     background: #55acee;
     font-weight: 700;
-   
+    border-radius: 30px;
 }
 
 
@@ -431,6 +452,10 @@ html{
     object-fit: cover;
    margin-bottom: 1rem;
 }
+.review p{
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+}
 
 /*----------------contact--------------*/
 .contact i{
@@ -438,17 +463,25 @@ html{
 }
 .contact .fa .fas
 {
-    font-weight: 600!important;
+    font-family: 'Aldrich', sans-serif;
+}
+.con span{
+    font-family: 'Aldrich', sans-serif;
+    font-weight: 500;
 }
 .contact input{
     background-color: var(--light);
     color: #6c737D;
     font-weight: 600;
+    height: 2.7rem;
 }
 .contact textarea{
     background-color: var(--light);
-    color: #6c737D;
+    color: #040405;
     font-weight: 600;
+}
+.contact p{
+    font-family: 'Palanquin Dark', sans-serif;
 }
 /*----------footer------------*/
 

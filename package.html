@@ -21,7 +21,7 @@
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-  <div id="preloader"></div>
+ 
   <!--<div class="color-switcher ">
     <div class="switcher-btn shadow py-3  ps-3 d-flex ">
       <i class="fas fa-cog " ></i>
@@ -38,6 +38,9 @@
     </div>
 
 </div>-->
+<div id="preloader" class="loader">
+  <img src="images/eb707ae7096cc8df384f1bf87dab547a.gif" alt="">
+</div>
     <!----------navbar------------>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 " id="top">
         <div class="container px-3 ">
@@ -65,7 +68,7 @@
               
             </ul>
             <div class="ms-lg-3">
-              <button type="button" class="btn rounded-pill  btn-color "> <a href="book.html"> Book Now </a> </button>
+              <button type="button" class="btn rounded-pill  btn-color2 "> <a href="book.html"> Book Now </a> </button>
             </div>
           </div>
         </div>
@@ -472,7 +475,7 @@
   
        <div class="col-md-3 col-lg-4 mb-4 mx-auto ">
          <figure><img src="images/main.png" alt="" height="40%" width="40%"></figure>
-       
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit. </p>
        </div>
        <div class="col-md-1 col-lg-2 col-xl-2 mx-auto mb-4 log">
      </div>
@@ -528,6 +531,13 @@
     <script>
       AOS.init();
     </script>
+     <script>
+      var loader = document.querySelector(".loader");
+      window.addEventListener("load", vanish);
+     function vanish(){
+       loader.classList.add("disappear");
+     }
+     
      </script>
      <script>
        var swiper = new Swiper(".inter-slider", {
