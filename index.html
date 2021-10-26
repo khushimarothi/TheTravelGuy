@@ -17,11 +17,14 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-  <!--<div class="loader-bg">
+ <!-- <div class="loader-bg"  >
     <div class="loader">
     </div>
     <img src="images/eb707ae7096cc8df384f1bf87dab547a.gif" alt="">
 </div>-->
+<div id="preloader" class="loader">
+  <img src="images/eb707ae7096cc8df384f1bf87dab547a.gif" alt="">
+</div>
 <!------------------------------------>
   <div class="color-switcher ">
     <div class="switcher-btn shadow py-3  ps-3 d-flex ">
@@ -655,12 +658,20 @@
     "load", function () {
     loader.style.display = "none";
   });
-</script>
-<script>
+</script>-->
+<!--<script>
   setTimeout(function(){
-    window.location.reload(1);},500);
+    $('.loader-bg').fadeToggle();
+        }, 10500);
+</script>-->
+<script>
+ var loader = document.querySelector(".loader");
+ window.addEventListener("load", vanish);
+function vanish(){
+  loader.classList.add("disappear");
+}
+
 </script>
--->
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
