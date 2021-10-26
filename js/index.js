@@ -29,12 +29,14 @@ btn1.addEventListener('click', () => {
 });
 
 btn2.addEventListener('click', () => {
-  var div = document.getElementById("change");
-  div.style.backgroundImage =" url('../images/demobg.jpg')";
+  document.getElementById("change").style.backgroundImage="url('../images/demobg.jpg')";
+ /* if(div == "url(../images/trial.jpg)"){
+    div.style.backgroundImage="url(../images/demobg.jpg)";
+  }
   var news = document.getElementById("news");
-  news.style.backgroundImage =" url('images/demobg.jpg')";
+  news.style.backgroundImage ="url('images/demobg.jpg')";
   var review = document.getElementById("review");
-  review.style.backgroundImage =" url('../images/demobg.jpg')";
+  review.style.backgroundImage =" url('../images/demobg.jpg')";*/
 });
 
 //validation--------------------------------------------->
