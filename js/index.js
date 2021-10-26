@@ -20,7 +20,7 @@ let btn2 = document.querySelector('#btn-2');
 
 
 btn1.addEventListener('click', () => {
-  var div = document.getElementById("change");
+  var div = document.getElementById('change');
   div.style.backgroundImage =" url('../images/trial.jpg')";
   var news = document.getElementById("news");
   news.style.backgroundImage =" url('../images/trial.jpg')";
@@ -32,7 +32,7 @@ btn2.addEventListener('click', () => {
   var div = document.getElementById("change");
   div.style.backgroundImage =" url('../images/demobg.jpg')";
   var news = document.getElementById("news");
-  news.style.backgroundImage =" url('../images/demobg.jpg')";
+  news.style.backgroundImage =" url('images/demobg.jpg')";
   var review = document.getElementById("review");
   review.style.backgroundImage =" url('../images/demobg.jpg')";
 });
