@@ -224,7 +224,7 @@ html{
 }
 /*-------------packages-------------*/
 #change{
-    background-image: url("../images/trial.jpg");
+    background-image: url("../images/bgpic1.jpg");
     width: 100%;
     background-size: cover;
 }
@@ -360,7 +360,7 @@ html{
     }      
 /*-------newsletter-------*/
 #news{
-    background-image: url("../images/trial.jpg");
+    background-image: url("../images/bgpic1.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -395,7 +395,7 @@ html{
 
 /*------review-----------*/
 #review{
-    background-image: url("../images/trial.jpg");
+    background-image: url("../images/bgpic1.jpg");
     background-size: cover;
     background-attachment: fixed;
 

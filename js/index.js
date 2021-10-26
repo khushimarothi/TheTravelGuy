@@ -21,22 +21,20 @@ let btn2 = document.querySelector('#btn-2');
 
 btn1.addEventListener('click', () => {
   var div = document.getElementById('change');
-  div.style.backgroundImage =" url('../images/trial.jpg')";
+  div.style.backgroundImage =" url(../images/bgpic1.jpg)";
   var news = document.getElementById("news");
-  news.style.backgroundImage =" url('../images/trial.jpg')";
+  news.style.backgroundImage =" url(../images/bgpic1.jpg)";
   var review = document.getElementById("review");
-  review.style.backgroundImage =" url('../images/trial.jpg')";
+  review.style.backgroundImage =" url(../images/bgpic1.jpg)";
 });
 
 btn2.addEventListener('click', () => {
-  document.getElementById("change").style.backgroundImage="url('../images/demobg.jpeg')";
- /* if(div == "url(../images/trial.jpg)"){
-    div.style.backgroundImage="url(../images/demobg.jpg)";
-  }
+  var div = document.getElementById('change');
+  div.style.backgroundImage =" url(../images/bgpic2.jpg)";
   var news = document.getElementById("news");
-  news.style.backgroundImage ="url('images/demobg.jpg')";
+  news.style.backgroundImage =" url(../images/bgpic2.jpg)";
   var review = document.getElementById("review");
-  review.style.backgroundImage =" url('../images/demobg.jpg')";*/
+  review.style.backgroundImage =" url(../images/bgpic2.jpg)";
 });
 
 //validation--------------------------------------------->
