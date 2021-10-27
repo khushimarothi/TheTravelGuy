@@ -3,8 +3,9 @@
 const form=document.getElementById('form');
 const uname=document.getElementById('name');
 const email=document.getElementById('email');
-const from=document.getElementById('from');
-const to=document.getElementById('to');
+//const from=document.getElementById('from');
+var from = document.getElementById('from');
+var to=document.getElementById('to');
 const date = document.getElementById('sdate');
 const edate = document.getElementById('edate');
 form.addEventListener('submit', (e) => {
@@ -13,13 +14,26 @@ form.addEventListener('submit', (e) => {
   checkInputs();
   });
 
+//////////////////
+const successFor = () =>{
+ let formCon = document.getElementsByClassName('form-control');
+ for(var i=0; i<formCon.length;i++){
+   if(formCon[i].className == "form-control success"){
+
+   }
+ }
+
+}
+
   function checkInputs(){
  
-    const nameValue = uname.value.trim();
-    const emailValue = email.value.trim();
+   const nameValue = uname.value.trim();
+   const emailValue = email.value.trim();
    const dateValue = date.value.trim();
    const edateValue = edate.value.trim();
-   
+  // const fromValue = from.value.trim();
+   var fromValue = from.value;
+   var toValue = to.value;
 //name 
   if( nameValue === ''){
     setErrorFor(uname, 'Name cannot be blank');
@@ -65,10 +79,38 @@ else{
   setErrorFor(edate, 'Enter valid Date');
 }
 //---------------------------------------------------------
- 
+if( fromValue === ''){
+  setErrorFor(from, 'Start destination cannot be blank');
+  from.style.borderColor ="#e74c3c";
+} 
+else{
+  setSuccessFor(from);
+  from.style.borderColor ="#2ecc71";
+}
+//-------------------------------------------
 
+if(toValue === ''){
+  setErrorFor(to, 'Start destination cannot be blank');
+  to.style.borderColor ="#e74c3c";
+} 
+else if(from.selectedIndex != -1 && to.selectedIndex != -1){
+  if(from.options[from.selectedIndex].value == to.options[to.selectedIndex].value){
+    setErrorFor(to, 'Same destination not accepted');
+    setErrorFor(from, 'Same destination not accepted');
+  }
+  else{
+    setSuccessFor(to);
+    to.style.borderColor ="#2ecc71";
+  }
+  }
 
-  } 
+///----------------------------------
+
+//------------------------------------------------------------
+successFor();
+
+} 
+
   //start date
 var today = new Date();
 var dd = today.getDate();
@@ -101,8 +143,6 @@ if(mm<10)
 }
 today=yyyy+'-'+mm+'-'+dd;
 document.getElementById("edate").setAttribute("min" , today);
-
-
 
 function setErrorFor(input, message){
   const formControl = input.parentElement;

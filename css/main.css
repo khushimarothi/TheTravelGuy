@@ -61,6 +61,7 @@ html{
 :root{
     --dark:#222;
     --light:#fff;
+    --fill1:#468ffd;
     
 }
 .text{
@@ -85,6 +86,9 @@ html{
 
 .color-switcher.active{
     right: 0;  
+}
+.theme-button.active{
+    right: -235px;
 }
 
 .color-switcher h3{
@@ -412,7 +416,11 @@ html{
     font-weight: 700;
     border-radius: 30px;
 }
-
+.btn:focus{
+ outline: none;
+ border: none;
+ box-shadow: none;
+}
 
 /*------review-----------*/
 #review{
@@ -482,6 +490,9 @@ html{
 }
 .contact p{
     font-family: 'Palanquin Dark', sans-serif;
+}
+.fill1{
+    color: var(--fill1);
 }
 /*----------footer------------*/
 

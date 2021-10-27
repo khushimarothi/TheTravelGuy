@@ -27,7 +27,7 @@
               <a class="nav-link " aria-current="page" href="index.html">Home</a>
             </li>
              <li class="nav-item ms-lg-3">
-              <a class="nav-link " aria-current="page" href="#">Packages</a>
+              <a class="nav-link " aria-current="page" href="package.html">Packages</a>
             </li>
             <li class="nav-item ms-lg-3">
               <a class="nav-link " aria-current="page" href="#">Services</a>
@@ -41,7 +41,7 @@
             
           </ul>
           <div class="ms-lg-3">
-            <button type="button" class="btn rounded-pill btn-primary "> Book Now </button>
+            <button type="button" class="btn rounded-pill btn-col "> Book Now </button>
           </div>
         </div>
       </div>
@@ -61,12 +61,12 @@
         <div class="container  d-flex align-items-center justify-content-center">
           <div class=" row main px-5">
             
-              <div class="header card-header d-flex  ">
-                <div class="btn-box">
-                  <div class="btn"></div>
-               <div class="flight "> <button type='button' onclick='flight()' class='toggle-btn '><i class="fas fa-plane"></i> <span>Flight</span></button></div>
-               <div class="flight ">  <button type='button' onclick='hotel()' class='toggle-btn '><i class="fas fa-hotel"></i> <span>Hotel</span></button></div>
-              </div></div>
+              <div class="header card-header "> 
+                <div class="btn-box  d-flex justify-content-center align-items-center"> 
+                  <div id="btn"></div>        
+               <div class="flight "> <button type='button' onclick='flight(this)' class='toggle-btn '><i class="fas fa-plane"></i> <span>Flight</span></button></div>
+               <div class="flight ">  <button type='button' onclick='hotel(this)' class='toggle-btn hot'><i class="fas fa-hotel"></i> <span>Hotel</span></button></div></div>
+              </div>
               <div class="header2 card-body p-4">
                <div class="flight1" id="flight">
                 <form class="row g-3" id="form">
@@ -83,13 +83,32 @@
                   </div>
                   <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">From</label>
-                    <input type="text" id="from" class="form-control">
-                  
-                    <small>Error message</small>
-                  </div>
+                    <select class="form-control from" name="from" id="from"  aria-placeholder="hello" >
+                      <option value="" selected hidden>From City/Airport</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kerela">Kerela</option>
+                      <option value="London">London</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Shimala">Shimala</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sydney">Sydney</option> 
+                    </select>
+                    <small> Error message</small>
+                    </div>
                   <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">To</label>
-                    <input type="text" id="to" class="form-control">
+                    <select class="form-control " name="from" id="to"  aria-placeholder="hello" >
+                      <option value="" selected hidden>To City/Airport</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kerela">Kerela</option>
+                      <option value="London">London</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Shimala">Shimala</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sydney">Sydney</option> 
+                    </select>
                     <small>Error message</small>
                   </div>
                   <div class="col-md-6">
@@ -102,7 +121,9 @@
                     <input type="date" id="edate" class="form-control edate" >
                     <small>Error message</small>
                   </div>
-                 
+                 <div class="col-md-6">
+                   
+                 </div>
                   <div class="col-12">
                     <button type="submit" class="btn btn-primary">Book</button>
                   </div>
@@ -119,18 +140,36 @@
                   <div class="col-md-6 ">
                     <label class="form-label">Email</label>
                     <input type="email" id="email" class="form-control">
-                  
                     <small>Error message</small>
                   </div>
                   <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">From</label>
-                    <input type="text" id="from" class="form-control">
-                  
-                    <small>Error message</small>
-                  </div>
+                    <select class="form-control from" name="from" id="from"  aria-placeholder="hello" >
+                      <option value="" selected hidden>From City/Airport</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kerela">Kerela</option>
+                      <option value="London">London</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Shimala">Shimala</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sydney">Sydney</option> 
+                    </select>
+                    <small> Error message</small>
+                    </div>
                   <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">To</label>
-                    <input type="text" id="to" class="form-control">
+                    <select class="form-control " name="from" id="to"  aria-placeholder="hello" >
+                      <option value="" selected hidden>To City/Airport</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kerela">Kerela</option>
+                      <option value="London">London</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Shimala">Shimala</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sydney">Sydney</option> 
+                    </select>
                     <small>Error message</small>
                   </div>
                   <div class="col-md-6">
@@ -143,96 +182,19 @@
                     <input type="date" id="edate" class="form-control edate" >
                     <small>Error message</small>
                   </div>
-                 
+                 <div class="col-md-6">
+                   
+                 </div>
                   <div class="col-12">
                     <button type="submit" class="btn btn-primary">Book</button>
                   </div>
-                </form>
+
               </div>
 
               </div>
               </div>
               </div> 
-          <!--   <div class="box px-3">
-           <input type="checkbox" class="toggle-btn" name="">
-             <div class="flight">
-                <div class="input-group">
-                    <div class="group">
-                      <label class="form-label">Name</label>
-                    <input id="name" class="inp" >
-                    <small>Error message</small>
-                    </div>
-                </div>
-                <div class="input-group">
-                  <div class="group">
-                    <label class="form-label">Name</label>
-                  <input id="name" class="inp" >
-                  <small>Error message</small>
-                  </div>
-              </div>
-              <div class="input-group">
-                <div class="group">
-                  <label class="form-label">Name</label>
-                <input id="name" class="inp" >
-                <small>Error message</small>
-                </div>
-            </div>
-            <div class="input-group">
-              <div class="group">
-                <label class="form-label">Name</label>
-              <input id="name" class="inp" >
-              <small>Error message</small>
-              </div>
-          </div>
-
-          <div class="input-group">
-            <div class="group">
-            
-            <input type="submit" value="book" class="inp submit-inp" >
-            <small>Error message</small>
-            </div>
-        </div>
-             </div>
-              <div class="hotel">
-            
-                <div class="input-group">
-                  <div class="group">
-                    <label class="form-label">Name</label>
-                  <input id="name" class="inp" >
-                  <small>Error message</small>
-                  </div>
-              </div>
-              <div class="input-group">
-                <div class="group">
-                  <label class="form-label">Name</label>
-                <input id="name" class="inp" >
-                <small>Error message</small>
-                </div>
-            </div>
-            <div class="input-group">
-              <div class="group">
-                <label class="form-label">Name</label>
-              <input id="name" class="inp" >
-              <small>Error message</small>
-              </div>
-          </div>
-          <div class="input-group">
-            <div class="group">
-              <label class="form-label">Name</label>
-            <input id="name" class="inp" >
-            <small>Error message</small>
-            </div>
-        </div>
-
-        <div class="input-group">
-          <div class="group">
-          
-          <input type="submit" value="book" class="inp submit-inp" >
-          <small>Error message</small>
-          </div>
-      </div>
-              </div>
-            </div>-->   
+             
              
               
          
@@ -249,18 +211,18 @@
 
   var x=document.getElementById('flight');
 		var y=document.getElementById('hotel');
-	
-		function flight()
+	var z =document.getElementById('btn');
+		function flight(button)
 		{
 			x.style.left='0';
 			y.style.left='103%';
-		
+		  z.style.left='0px';
 		}
-		function hotel()
+		function hotel(button)
 		{
-			x.style.left='-110%';
+			x.style.left='-120%';
 			y.style.left='0';
-			
+      z.style.left='100px';	
 		}
 
 </script>
