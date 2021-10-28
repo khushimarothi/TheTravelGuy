@@ -14,18 +14,29 @@ form.addEventListener('submit', (e) => {
   checkInputs();
   });
 
+  const sendData = (sRate, count) =>{
+    if(sRate === count){
+      alert('booking successful');
+      swal("Good job!", "You clicked the button!", "success");
+    }
+  }
+
 //////////////////
 const successFor = () =>{
- let formCon = document.getElementsByClassName('form-control');
+ let formCon = document.getElementsByClassName('col-md-6');
+ var count = formCon.length - 1;
  for(var i=0; i<formCon.length;i++){
-   if(formCon[i].className == "form-control success"){
-
+   if(formCon[i].className === "col-md-6 success"){
+   var sRate = 0 + i;
+    sendData(count);
+   }
+   else{
+     return false;
    }
  }
 
 }
-
-  function checkInputs(){
+function checkInputs(){
  
    const nameValue = uname.value.trim();
    const emailValue = email.value.trim();
@@ -90,21 +101,19 @@ else{
 //-------------------------------------------
 
 if(toValue === ''){
-  setErrorFor(to, 'Start destination cannot be blank');
+  setErrorFor(to, 'Final destination cannot be blank');
   to.style.borderColor ="#e74c3c";
 } 
 else if(from.selectedIndex != -1 && to.selectedIndex != -1){
   if(from.options[from.selectedIndex].value == to.options[to.selectedIndex].value){
     setErrorFor(to, 'Same destination not accepted');
-    setErrorFor(from, 'Same destination not accepted');
+    
   }
   else{
     setSuccessFor(to);
     to.style.borderColor ="#2ecc71";
   }
   }
-
-///----------------------------------
 
 //------------------------------------------------------------
 successFor();

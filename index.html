@@ -38,7 +38,7 @@
     </h3>
 </div>
 
- <div class="theme-buttons-container my-1 py-3 px-4 ">
+ <div class="theme-buttons-container my-1 py-3 px-4 " id="colos">
 
    <button id="btn-1" class="theme-button btn shadow w-100 mb-2 " data-color="#222222"  data-color-light="#ffffff" data-fill="#468ffd" style="background-color: #0061f2; background-image: linear-gradient(45deg,#fff,#222222);"><span class="text1">Dark Theme</span></button>
    <button id="btn-2" class="theme-button btn  shadow w-100 mb-2" data-color="#ffffff" data-color-light="#222222" data-fill="#30306e" style="background-color: #1da1f5; background-image: linear-gradient(45deg,#222,#fff);"><span  class="text2" >Light Theme</span></button>
@@ -70,12 +70,11 @@
               <li class="nav-item ms-lg-3">
                 <a class="nav-link " aria-current="page" href="#contact">Contact</a>
               </li>
-              
+              <li class="nav-item ms-lg-3">
+                <button type="button" class="btn rounded-pill btn-primary "> <a href="book.html"> Book Now </a> </button>
+              </li>
             </ul>
-            <div class="ms-lg-3">
-              <button type="button" class="btn rounded-pill btn-primary "> <a href="book.html"> Book Now </a> </button>
-            </div>
-          </div>
+                     </div>
         </div>
       </nav>
       <!------------------------------------>
@@ -356,8 +355,8 @@
     <span>N</span>
     </div>
     <div class="container mx-auto py-5"  data-aos="fade-up">
-           <div class="row g-1 py-2">
-          <div class="col-md-6">
+           <div class="row  gx-3 ">
+          <div class="col-md-6 py-2">
            <div class="card h-100 shadow bg-dark text-white"  >
              <img src="images/mauritius.jpg" class="card-img" alt="..."  height="100%">
              <div class="card-img-overlay mt-2">
@@ -368,7 +367,7 @@
              </div>
            </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 py-2">
            <div class="card h-100 shadow bg-dark text-white">
              <img src="images/london.jpg" class="card-img" alt="..."  height="100%">
              <div class="card-img-overlay mt-2">
@@ -381,8 +380,8 @@
          </div>
  
       
-         <div class="row g-1 gy-2">
-           <div class=" col-md-6">
+         <div class="row  gx-3">
+           <div class=" col-md-6 py-2">
            <div class="card h-100 shadow bg-dark text-white">
              <img src="images/agra.jpg" class="card-img" alt="..."  height="100%">
              <div class="card-img-overlay mt-2">
@@ -394,8 +393,8 @@
            </div>
          </div>
  
-         <div class="col-md-3 center">
-           <div class="row pb-1">
+         <div class="col-md-3 center py-2">
+           <div class="row pb-2">
              <div class="col">
              <div class="card h-100 shadow bg-dark text-white">
                <img src="images/paris.jpg" class="card-img" alt="..."  height="100%">
@@ -407,7 +406,7 @@
                </div></div>
              </div>
             </div>
-        <div class="row gy-2">
+        <div class="row ">
           <div class="col">
          <div class="card h-100 shadow bg-dark text-white">
            <img src="images/pack1.jpg" class="card-img" alt="..."  height="100%">
@@ -420,7 +419,7 @@
         </div>
             
          </div>
-         <div class="col-md-3">
+         <div class="col-md-3 py-2">
            <div class="card h-100 shadow bg-dark text-white">
              <img src="images/Singapore.jpg" class="card-img" alt="..."  height="100%">
              <div class="card-img-overlay mt-2">
@@ -543,7 +542,10 @@
              <i class=" fa fa-star-half-alt fill1"></i>
              </div>
            </div>
+            
       </div>
+
+      <div class="swiper-pagination pt-3"></div>
     </div>
  </div>
 
@@ -692,6 +694,9 @@ function vanish(){
       delay:3500,
       disableOnInteraction:false,
     },
+    pagination: {
+          el: ".swiper-pagination",
+        },
   breakpoints: {
     640: {
       slidesPerView: 1,

@@ -21,7 +21,6 @@ function changecolor(){
 let btn1 = document.querySelector('#btn-1');
 let btn2 = document.querySelector('#btn-2');
 
-
 btn1.addEventListener('click', () => {
   var div = document.getElementById('change');
   var news = document.getElementById("news");
@@ -31,6 +30,9 @@ btn1.addEventListener('click', () => {
   news.style.backgroundImage =" url(images/bgpic1.jpg)";
  
   review.style.backgroundImage =" url(images/bgpic1.jpg)";
+  
+  const contain =document.getElementById('color-swit');
+  contain.classList.remove('active');
 
 });
 
@@ -43,6 +45,10 @@ btn2.addEventListener('click', () => {
   news.style.backgroundImage =" url(images/bglight1.jpg)";
  
   review.style.backgroundImage =" url(images/bglight1.jpg)";
+ 
+  const contain =document.getElementById('color-swit');
+  contain.classList.remove('active');
+
 
 });
 
