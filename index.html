@@ -50,11 +50,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 " id="top">
         <div class="container px-3 ">
           <a class="navbar-brand" href="#"><img src="images/main.png" alt="" height="48px" width="100px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="elem">
               <li class="nav-item ms-lg-3">
                 <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
@@ -62,7 +62,7 @@
                 <a class="nav-link " aria-current="page" href="package.html">Packages</a>
               </li>
               <li class="nav-item ms-lg-3">
-                <a class="nav-link " aria-current="page" href="#service">Services</a>
+                <a class="nav-link "  aria-current="page" href="#service">Services</a>
               </li>
               <li class="nav-item ms-lg-3">
                 <a class="nav-link " aria-current="page" href="#gallery">Gallery</a>
@@ -334,7 +334,7 @@
     </div>
     <div class="col-md-12 news align-items-center justify-content-center px-4 py-3">
      <div class="newstext1 my-1"><input type="text" class="form-control" placeholder="Enter Email Address"></div>
-     <div  class="newstext2 my-1"><button class="btn btn-outline-secondary" type="button" id="button-addon2">Join</button></div>
+     <div  class="newstext2 my-1"><button class="btn" type="button" id="button-addon2">Join</button></div>
     </div>
   </div>
 
@@ -554,16 +554,14 @@
 <!---------------------contact---------------------------->
 <section class="contact container py-5"  id="contact">
   <div class="heading py-4"  data-aos="fade-up" >
-    <span>C</span>
-    <span>O</span>
-    <span>N</span>
-    <span>T</span>
+    <span>F</span>
     <span>A</span>
-    <span>C</span>
-    <span>T</span>
+    <span>Q</span>
+    <span>s</span>
+    
   </div>
 
-  <div class="row mx-2  g-2 pt-3" data-aos="fade-up">
+  <!--<div class="row mx-2  g-2 pt-3" data-aos="fade-up">
     <div class="col-md-6 mx-auto">
       <h3 class="mb-3">Get In Touch</h3>
      <p class="mb-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius eveniet voluptatum id alias eligendi.
@@ -597,25 +595,79 @@
       </div>
     </div>
    
+  </div>-->
+
+  <div class="container pt-4">
+    <div class="row mx-auto">
+      <div class="col-md-6 my-auto">
+       
+        <div class="question-container ">
+          <div class="content-container">
+            <div class="faq-header">
+              <h5>How will my hotel booking or vacation packages be confirmed?</h5>
+               <span class="open active">+</span>
+               <span class="close">-</span>
+
+            </div>
+            <div class="content ">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi iste quis voluptate debitis incidunt quisquam cupiditate quidem, molestiae temporibus!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="content-container">
+            <div class="faq-header">
+              <h5>what is lorem ?</h5>
+               <span class="open active">+</span>
+               <span class="close">-</span>
+
+            </div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, commodi.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="content-container">
+            <div class="faq-header">
+              <h5>what is lorem ?</h5>
+               <span class="open active">+</span>
+               <span class="close">-</span>
+
+            </div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos vitae ipsam voluptatem autem voluptatibus labore! </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-6 text-center my-auto" >
+        <img src="images/faqs.png" alt="" height="50%" width="50%"  >
+      </div>
+    </div>
   </div>
 
 </section>
 
 <!------------------------footer------------------------->
 
-<footer class="bg-light ">
+<footer class="foot">
   <div class="container py-4">
      
-   <div class="row mt-4 px-4">
-
-
-     <div class="col-md-3 col-lg-4 mb-4 mx-auto ">
+   <div class="row mt-4 px-3 mx-auto ">
+     <div class="col-md-3 mb-2 mx-auto ">
        <figure><img src="images/main.png" alt="" height="40%" width="40%"></figure>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit. </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
      </div>
-     <div class="col-md-1 col-lg-2 col-xl-2 mx-auto mb-4 log">
-   </div>
-     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+    
+  
+     <div class="col-md-3 mx-auto mb-2 ">
            <h5>Useful Links</h5>
            <div class="underline1 mb-4"></div>
               
@@ -625,53 +677,49 @@
             <p><a href="#" class="anc">Contact Us</a></p>
 
      </div>
-
-     <div class="col-md-3  mx-auto mb-4">
+     
+     <div class="col-md-3   mb-2 cont">
+      <h5>Reach Us</h5>
+      <div class="underline1 mb-4"></div>
+      <h6><i class="far fa-envelope icon ">  </i> Email</h6>
+     <p>travelguys@gmail.com</p>
+      <h6><i class="fas fa-phone-alt icon "> </i> Call Us At</h6>
+      <p>+91 9865021867</p>
+     
+      
+    </div>
+    <div class="col-md-3 subs  mx-auto mb-2 ">
        <h5>Subscribe </h5>
        <div class="underline1 mb-4"></div>
-          <p>Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
-      <div class="d-flex">
-       <input type="text" class="form-control let " placeholder="Email Address" aria-label="First name"><button type="submit" class=" btn in btn-primary "><i class="fa fa-paper-plane"></i></button>
-      </div>
-      <h6 class="pt-3">Follow Us</h6>
-      <a href="#" class="so1">
-        <i class="fab fa-facebook-f p-2 text-center so2"></i>
-      </a>
-      <a href="#" class="so1 ms-1">
-        <i class="fab fa-twitter p-2 so3"></i>
-      </a>
-      <a href="#" class="so1  ms-1">
-        <i class="fab fa-google p-2 so4"></i>
-      </a>
-      <a href="#" class="so1  ms-1">
-        <i class="fab fa-instagram text-center p-2 so5"></i>
-      </a>
-      <a href="#" class="so1  ms-1">
-        <i class="fab fa-linkedin p-2 text-center so6"></i>
-      </a>
-
+         <div class="d-flex">
+        <input type="text" class="form-control let " placeholder="Email Address" aria-label="First name"><button type="submit" class=" btn in btn-primary "><i class="fa fa-paper-plane"></i></button>
+       </div>
+       <h6 class="pt-3">Follow Us</h6>
+       <a href="#" class="so1">
+         <i class="fab fa-facebook-f p-2 text-center so2"></i>
+       </a>
+       <a href="#" class="so1 ">
+         <i class="fab fa-twitter p-2 so3"></i>
+       </a>
+       <a href="#" class="so1 ">
+         <i class="fab fa-google p-2 so4"></i>
+       </a>
+       <a href="#" class="so1  ">
+         <i class="fab fa-instagram text-center p-2 so5"></i>
+       </a>
+     
  </div>
 
+
+
    </div>
- 
   </div>
 
   <div class="text-center p-3 sie">
    Copyright © 2021 TheTravelGuy | Powered by Asper Team
   </div>
 </footer>
-<!--<script>
-  var loader = document.getElementById("preloader");
-  window.addEventListener(
-    "load", function () {
-    loader.style.display = "none";
-  });
-</script>-->
-<!--<script>
-  setTimeout(function(){
-    $('.loader-bg').fadeToggle();
-        }, 10500);
-</script>-->
+
 <script>
  var loader = document.querySelector(".loader");
  window.addEventListener("load", vanish);

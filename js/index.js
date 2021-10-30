@@ -1,4 +1,3 @@
-
 const colors=document.getElementsByClassName('theme-button');
 
 let i;
@@ -30,7 +29,6 @@ btn1.addEventListener('click', () => {
   news.style.backgroundImage =" url(images/bgpic1.jpg)";
  
   review.style.backgroundImage =" url(images/bgpic1.jpg)";
-  
   const contain =document.getElementById('color-swit');
   contain.classList.remove('active');
 
@@ -48,7 +46,25 @@ btn2.addEventListener('click', () => {
  
   const contain =document.getElementById('color-swit');
   contain.classList.remove('active');
+});
 
+const faqheader = document.querySelectorAll('.faq-header');
+faqheader.forEach((header , i) =>{
+  header.addEventListener('click', () => {
+    header.nextElementSibling.classList.toggle('active');
+
+    const open= header.querySelector('.open');
+    const close= header.querySelector('.close');
+
+    if(header.nextElementSibling.classList.contains("active")){
+      open.classList.remove('active');
+      close.classList.add('active');
+    }
+    else{
+      open.classList.add('active');
+      close.classList.remove('active');
+    }
+  });
 
 });
 
