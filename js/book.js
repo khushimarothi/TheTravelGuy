@@ -3,48 +3,29 @@
 const form=document.getElementById('form');
 const uname=document.getElementById('name');
 const email=document.getElementById('email');
-//const from=document.getElementById('from');
 var from = document.getElementById('from');
 var to=document.getElementById('to');
 const date = document.getElementById('sdate');
 const edate = document.getElementById('edate');
+const adult = document.getElementById('adult');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   checkInputs();
   });
 
-  const sendData = (sRate, count) =>{
-    if(sRate === count){
-      alert('booking successful');
-      swal("Good job!", "You clicked the button!", "success");
-    }
-  }
-
-//////////////////
-const successFor = () =>{
- let formCon = document.getElementsByClassName('col-md-6');
- var count = formCon.length - 1;
- for(var i=0; i<formCon.length;i++){
-   if(formCon[i].className === "col-md-6 success"){
-   var sRate = 0 + i;
-    sendData(count);
-   }
-   else{
-     return false;
-   }
- }
-
-}
+  
 function checkInputs(){
  
    const nameValue = uname.value.trim();
    const emailValue = email.value.trim();
    const dateValue = date.value.trim();
    const edateValue = edate.value.trim();
+   const passValue = adult.value.trim();
   // const fromValue = from.value.trim();
    var fromValue = from.value;
    var toValue = to.value;
+   
 //name 
   if( nameValue === ''){
     setErrorFor(uname, 'Name cannot be blank');
@@ -113,13 +94,18 @@ else if(from.selectedIndex != -1 && to.selectedIndex != -1){
     setSuccessFor(to);
     to.style.borderColor ="#2ecc71";
   }
-  }
-
-//------------------------------------------------------------
-successFor();
 
 } 
+if(passValue === '')
+{
+  setErrorFor(adult, 'Enter the value')
+}
+else{
+  setSuccessFor(adult);
+}
 
+
+}
   //start date
 var today = new Date();
 var dd = today.getDate();
@@ -135,6 +121,7 @@ if(mm<10)
 }
 today=yyyy+'-'+mm+'-'+dd;
 document.getElementById("sdate").setAttribute("min" , today);
+
 
 //end date
   
@@ -164,7 +151,6 @@ function setSuccessFor(input){
   const formControl = input.parentElement;
   formControl.className = 'col-md-6 success';
 }
-
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }

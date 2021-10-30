@@ -53,10 +53,12 @@ a:hover{
 html{
     scroll-behavior: smooth!important;
 }
+
 :root{
     --dark:#fff;
     --light:#222;
     --fill1:#30306e;
+    --swiper-theme-color:#30306e;
     
 }
 .text{
@@ -450,6 +452,9 @@ html{
     font-size: 18px;
 }
 
+.swiper-pagination-bullet{
+ background: var(--swiper-theme-color)!important;
+}
 /*----------------contact--------------*/
 /*.contact i{
     font-size: 20px!important;
@@ -472,10 +477,12 @@ html{
     background-color: var(--light);
     color: #040405;
     font-weight: 600;
-}*/
+}
+
+
 .contact p{
     font-family: 'Palanquin Dark', sans-serif;
-}
+}*/
 .fill1{
     color: var(--fill1);
 }
@@ -493,7 +500,7 @@ html{
     padding: 0px 14px;
    font-size: 22px;
    font-weight: bold;
-   transform: translateY(-8px);
+   transform: translateY(-6px);
    opacity: 0;
    transition: all 500ms;
 }
@@ -514,7 +521,7 @@ html{
     transition: all 500ms;
 }
 .content.active{
-    max-height: 300px;
+   max-height: 100px;
 
 }
 
