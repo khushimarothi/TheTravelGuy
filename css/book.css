@@ -276,7 +276,7 @@ hr{
 
 .btn-colort{
     background-color: #fff;
-    color: #000080;
+    color: #000080!important;
     border: 2px solid navy;
     padding: 10px 15px;
     font-weight: 700;
