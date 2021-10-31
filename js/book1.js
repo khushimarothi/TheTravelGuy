@@ -11,7 +11,6 @@ form1.addEventListener('submit', (event) => {
   checkInputs1();
   });
 
- 
 
 function checkInputs1(){
  
@@ -24,80 +23,80 @@ function checkInputs1(){
    var typeValue = to1.value;
 //name 
   if( useValue === ''){
-    setErrorFor(uname1, 'Name cannot be blank');
+    setError(uname1, 'Name cannot be blank');
   } 
   
   else if(useValue.length<=4){
-    setErrorFor(uname1, 'Name minimum 5 character ');
+    setError(uname1, 'Name minimum 5 character ');
   }
 
   else {
-   setSuccessFor(uname1);
+   setSuccess(uname1);
   }
 //email  
   if(mailValue === ''){
-    setErrorFor(email1, 'Email cannot be blank');
+    setError(email1, 'Email cannot be blank');
  }
  else if (!isEmail(mailValue)) {
-   setErrorFor(email1, 'Not a valid email');
+   setError(email1, 'Not a valid email');
  } 
  else{
-   setSuccessFor(email1);
+   setSuccess(email1);
  }
  //date--------------------------------------------------
  if( dValue === '')
 {
-  setErrorFor(date1, 'Check-in value cannot be blank');
+  setError(date1, 'Check-in value cannot be blank');
 }
 else{
-  setSuccessFor(date1);
+  setSuccess(date1);
 }
 //end date-----------------------------------------------
 if( eValue === '')
 {
-  setErrorFor(edate1, 'Check-out cannot be blank');
+  setError(edate1, 'Check-out cannot be blank');
 }
 else{
-  setSuccessFor(edate1);
+  setSuccess(edate1);
 }
  //compare------------------------------------------------
 
 
 //---------------------------------------------------------
 if( roomValue === ''){
-  setErrorFor(from1, 'Enter City you want to stay');
+  setError(from1, 'Enter City you want to stay');
   from1.style.borderColor ="#e74c3c";
 } 
 else{
-  setSuccessFor(from1);
+  setSuccess(from1);
   from1.style.borderColor ="#2ecc71";
 }
 //-------------------------------------------
 
 if(typeValue === ''){
-  setErrorFor(to1, 'Select your room type');
+  setError(to1, 'Select your room type');
   to1.style.borderColor ="#e74c3c";
 } 
 else if(from1.selectedIndex != -1 && to1.selectedIndex != -1){
   if(from1.options[from1.selectedIndex].value == to1.options[to1.selectedIndex].value){
-    setErrorFor(to1, 'Same destination not accepted');
+    setError(to1, 'Same destination not accepted');
     
   }
   else{
-    setSuccessFor(to1);
+    setSuccess(to1);
     to1.style.borderColor ="#2ecc71";
   }
   }
 
 //------------------------------------------------------------
-successFor();
+
 
 } 
 
 var today1 = new Date();
-var dd1 = today.getDate();
-var mm1 = today.getMonth()+1;
-var yyyy = today.getFullYear();
+var dd1 = today1.getDate();
+var mm1 = today1.getMonth()+1;
+var yyyy1 = today1.getFullYear();
 if(dd1<10)
 {
   dd1='0'+ dd
@@ -112,29 +111,29 @@ document.getElementById("sdate1").setAttribute("min" , today1);
 
 //end date
   
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1;
-var yyyy = today.getFullYear();
+var today1 = new Date();
+var dd1 = today1.getDate();
+var mm1 = today1.getMonth()+1;
+var yyyy1 = today1.getFullYear();
 if(dd<10)
 {
-  dd='0'+ dd
+  dd1='0'+ dd1
 } 
 if(mm<10)
 {
-  mm='0'+mm
+  mm1='0'+mm1
 }
-today=yyyy+'-'+mm+'-'+dd;
-document.getElementById("edate1").setAttribute("min" , today);
+today1=yyyy1+'-'+mm1+'-'+dd1;
+document.getElementById("edate1").setAttribute("min" , today1);
 
-function setErrorFor(input, message){
+function setError(input, message){
   const formControl = input.parentElement;
   const small = formControl.querySelector('small');
    small.innerText = message;
    formControl.className = 'col-md-6 error';
 }
 
-function setSuccessFor(input){
+function setSuccess(input){
   const formControl = input.parentElement;
   formControl.className = 'col-md-6 success';
 }

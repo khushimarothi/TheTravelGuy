@@ -456,33 +456,7 @@ html{
  background: var(--swiper-theme-color)!important;
 }
 /*----------------contact--------------*/
-/*.contact i{
-    font-size: 20px!important;
-}
-.contact .fa .fas
-{
-    font-family: 'Aldrich', sans-serif;
-}
-.con span{
-    font-family: 'Aldrich', sans-serif;
-    font-weight: 500;
-}
-.contact input{
-    background-color: var(--light);
-    color: #6c737D;
-    font-weight: 600;
-    height: 2.7rem;
-}
-.contact textarea{
-    background-color: var(--light);
-    color: #040405;
-    font-weight: 600;
-}
 
-
-.contact p{
-    font-family: 'Palanquin Dark', sans-serif;
-}*/
 .fill1{
     color: var(--fill1);
 }
@@ -530,7 +504,6 @@ html{
 footer {
     background: #f1f1f1;
     color: black;
-    
     font-family: 'Aldrich', sans-serif;
 }
 

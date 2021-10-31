@@ -1,5 +1,5 @@
 //validation--------------------------------------------->
-
+  
 const form=document.getElementById('form');
 const uname=document.getElementById('name');
 const email=document.getElementById('email');
@@ -10,11 +10,37 @@ const edate = document.getElementById('edate');
 const adult = document.getElementById('adult');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
   checkInputs();
   });
-
   
+  const sendData=(sRate) => {
+    if (sRate == 6) {
+      swal("Thanks for your booking!", "Please check your mail to get the ticket and pay the amount.", "success");
+      document.getElementById('form').reset(); 
+     
+        }
+    
+  }
+
+const successMsg = () => {
+let formCon = document.getElementsByClassName('col-md-6');
+
+var count = formCon.length - 1;
+for (var i = 0; formCon.length; i++) {
+    if (formCon[i].className === "col-md-6 success") {
+        var sRate = 0 + i;
+        console.log(sRate);
+        console.log(count);      
+        sendData(sRate);
+           
+    } 
+    else
+     return false;
+}
+}
+
+
+
 function checkInputs(){
  
    const nameValue = uname.value.trim();
@@ -49,7 +75,7 @@ function checkInputs(){
    setSuccessFor(email);
  }
  //date--------------------------------------------------
- if( dateValue === '')
+ if( dateValue == '')
 {
   setErrorFor(date, 'Date cannot be blank');
 }
@@ -57,7 +83,7 @@ else{
   setSuccessFor(date);
 }
 //end date-----------------------------------------------
-if( edateValue === '')
+if( edateValue == '')
 {
   setErrorFor(edate, 'Date cannot be blank');
 }
@@ -71,7 +97,7 @@ else{
   setErrorFor(edate, 'Enter valid Date');
 }
 //---------------------------------------------------------
-if( fromValue === ''){
+if( fromValue == ''){
   setErrorFor(from, 'Start destination cannot be blank');
   from.style.borderColor ="#e74c3c";
 } 
@@ -81,7 +107,7 @@ else{
 }
 //-------------------------------------------
 
-if(toValue === ''){
+if(toValue == ''){
   setErrorFor(to, 'Final destination cannot be blank');
   to.style.borderColor ="#e74c3c";
 } 
@@ -96,7 +122,7 @@ else if(from.selectedIndex != -1 && to.selectedIndex != -1){
   }
 
 } 
-if(passValue === '')
+if(passValue == '')
 {
   setErrorFor(adult, 'Enter the value')
 }
@@ -104,6 +130,7 @@ else{
   setSuccessFor(adult);
 }
 
+successMsg();
 
 }
   //start date
@@ -140,17 +167,19 @@ if(mm<10)
 today=yyyy+'-'+mm+'-'+dd;
 document.getElementById("edate").setAttribute("min" , today);
 
+
 function setErrorFor(input, message){
   const formControl = input.parentElement;
   const small = formControl.querySelector('small');
    small.innerText = message;
    formControl.className = 'col-md-6 error';
-}
-
-function setSuccessFor(input){
+  }
+  
+  function setSuccessFor(input){
   const formControl = input.parentElement;
   formControl.className = 'col-md-6 success';
-}
+  }
+
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
